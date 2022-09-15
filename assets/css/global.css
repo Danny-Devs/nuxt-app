@@ -9,12 +9,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: theme('borderColor.DEFAULT', currentColor); /* 2 */
-}
-
-::before,
-::after {
-  --tw-content: '';
+  border-color: #e5e7eb; /* 2 */
 }
 
 /*
@@ -29,24 +24,10 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   tab-size: 4; /* 3 */
-  font-family: theme(
-    'fontFamily.sans',
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    'Noto Sans',
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji'
-  ); /* 4 */
-  scrollbar-gutter: stable; /* from AntFu https://github.com/unocss/unocss/blob/main/packages/reset/antfu.md */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; /* 4 */
+  scrollbar-gutter: stable; /* https://github.com/unocss/unocss/blob/main/packages/reset/antfu.md */
 }
 
 /*
@@ -120,17 +101,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: theme(
-    'fontFamily.mono',
-    ui-monospace,
-    SFMono-Regular,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Liberation Mono',
-    'Courier New',
-    monospace
-  ); /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -339,7 +311,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
-  color: theme('colors.gray.400', #9ca3af); /* 2 */
+  color: #9ca3af; /* 2 */
 }
 
 /*
@@ -386,7 +358,7 @@ video {
   height: auto;
 }
 
-/* from AntFu https://github.com/unocss/unocss/blob/main/packages/reset/antfu.md */
+/* from https://github.com/unocss/unocss/blob/main/packages/reset/antfu.md */
 .dark {
   color-scheme: dark;
 }
